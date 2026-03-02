@@ -1,0 +1,29 @@
+<svg viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <!-- Building 1: tallest, angled top-left (skyscraper) -->
+  <path d="M 34 114 L 53 14 L 71 14 L 71 114 Z" stroke="#1A1AEB" stroke-width="6.5" stroke-linejoin="miter" fill="white"/>
+
+  <!-- Building 2 -->
+  <path d="M 74 52 L 74 114 L 90 114 L 90 52 Z" stroke="#1A1AEB" stroke-width="6.5" stroke-linejoin="miter" fill="white"/>
+
+  <!-- Building 3: second tallest, center -->
+  <path d="M 93 34 L 93 114 L 111 114 L 111 34 Z" stroke="#1A1AEB" stroke-width="6.5" stroke-linejoin="miter" fill="white"/>
+
+  <!-- Building 4 -->
+  <path d="M 114 60 L 114 114 L 130 114 L 130 60 Z" stroke="#1A1AEB" stroke-width="6.5" stroke-linejoin="miter" fill="white"/>
+
+  <!-- Building 5 -->
+  <path d="M 133 54 L 133 114 L 149 114 L 149 54 Z" stroke="#1A1AEB" stroke-width="6.5" stroke-linejoin="miter" fill="white"/>
+
+  <!-- Building 6: far right, shorter -->
+  <path d="M 152 70 L 152 114 L 166 114 L 166 70 Z" stroke="#1A1AEB" stroke-width="6.5" stroke-linejoin="miter" fill="white"/>
+
+  <!-- Two horizontal pill lines -->
+  <rect x="66" y="122" width="84" height="9" rx="4.5" fill="#1A1AEB"/>
+  <rect x="78" y="137" width="60" height="8" rx="4" fill="#1A1AEB"/>
+
+  <!-- Outer sweeping arc (downward) -->
+  <path d="M 16 152 Q 100 214 184 152" stroke="#1A1AEB" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- Inner arc -->
+  <path d="M 36 163 Q 100 212 164 163" stroke="#1A1AEB" stroke-width="7" stroke-linecap="round"/>
+</svg>

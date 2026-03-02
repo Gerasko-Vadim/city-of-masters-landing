@@ -8,7 +8,7 @@ const inter = Inter({
   display: "swap",
 });
 
-const SITE_URL = "https://gorodmasterov.kg";
+const SITE_URL = "https://city-of-masters.com";
 const SITE_NAME = "Город Мастеров";
 const TITLE = "Город Мастеров — Мастер за 20 минут в Бишкеке | Электрик, Сантехник";
 const DESCRIPTION =
@@ -90,7 +90,7 @@ const jsonLd = {
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "4.9",
-    reviewCount: "500",
+    reviewCount: "200",
     bestRating: "5",
   },
   hasOfferCatalog: {

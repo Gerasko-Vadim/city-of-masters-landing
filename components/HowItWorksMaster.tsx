@@ -4,8 +4,8 @@ const steps = [
   {
     number: "1",
     icon: "📲",
-    title: "Напишите в Telegram-бот",
-    desc: "Найдите @gorodmasterov312 в Telegram и нажмите «Старт». Регистрация займёт 2 минуты.",
+    title: "Напишите нашему администратору",
+    desc: "Найдите @gorodmasterov312 в Telegram и напишите нам. Регистрация займёт 2 минуты.",
   },
   {
     number: "2",

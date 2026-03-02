@@ -31,15 +31,20 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2 no-underline">
-            <span className="text-2xl">🏠</span>
+          <a href="#" className="flex items-center gap-2.5 no-underline">
+            <img
+              src="/logo.png"
+              alt="Город Мастеров"
+              width={44}
+              height={44}
+              style={{ borderRadius: 10, objectFit: "contain", flexShrink: 0, background: "white", padding: 2 }}
+            />
             <span
               className={`font-bold text-lg leading-tight transition-colors ${
                 scrolled ? "text-gray-900" : "text-white"
               }`}
             >
-              Город<br className="hidden" />
-              <span style={{ color: "#FF6B35" }}> Мастеров</span>
+              Город <span style={{ color: "#FF6B35" }}>Мастеров</span>
             </span>
           </a>
 

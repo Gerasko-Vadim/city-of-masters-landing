@@ -21,11 +21,11 @@ const faqs = [
   },
   {
     q: "Что если работа выполнена некачественно?",
-    a: "Напишите нам в поддержку @gorodmasterov312. Мы разберём ситуацию и поможем решить проблему. Качество работы — наш приоритет.",
+    a: "Напишите нашему администратору @gorodmasterov312. Мы разберём ситуацию и поможем решить проблему. Качество работы — наш приоритет.",
   },
   {
     q: "Нужно ли скачивать приложение?",
-    a: "Нет! Всё работает через Telegram — самый удобный мессенджер. Просто откройте бот @city_of_masters_client_bot и сделайте заказ. Никаких скачиваний.",
+    a: "Нет! Всё работает через Telegram. Просто откройте @city_of_masters_client_bot и сделайте заказ. Никаких скачиваний.",
   },
 ];
 
@@ -43,36 +43,92 @@ export default function FAQ() {
           >
             Вопросы и ответы
           </span>
-          <h2 className="section-title mb-3">Часто задаваемые<br />вопросы</h2>
+          <h2 className="section-title mb-3">
+            Часто задаваемые<br />вопросы
+          </h2>
         </div>
 
         {/* Accordion */}
-        <div className="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100">
-          {faqs.map((faq, i) => (
-            <div key={i} className="faq-item last:border-0">
-              <button
-                className="faq-question px-6"
-                onClick={() => setOpenIndex(openIndex === i ? null : i)}
+        <div
+          style={{
+            background: "white",
+            borderRadius: 24,
+            overflow: "hidden",
+            boxShadow: "0 2px 16px rgba(0,0,0,0.06)",
+            border: "1px solid #F3F4F6",
+          }}
+        >
+          {faqs.map((faq, i) => {
+            const isOpen = openIndex === i;
+            const isLast = i === faqs.length - 1;
+            return (
+              <div
+                key={i}
+                style={{
+                  borderBottom: isLast ? "none" : "1px solid #F3F4F6",
+                }}
               >
-                <span>{faq.q}</span>
-                <span
-                  className="text-2xl flex-shrink-0 ml-4 transition-transform duration-300"
+                <button
+                  onClick={() => setOpenIndex(isOpen ? null : i)}
                   style={{
-                    color: "#FF6B35",
-                    transform: openIndex === i ? "rotate(45deg)" : "rotate(0deg)",
+                    width: "100%",
+                    textAlign: "left",
+                    display: "flex",
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                    padding: "20px 24px",
+                    background: "none",
+                    border: "none",
+                    cursor: "pointer",
+                    gap: 16,
                   }}
                 >
-                  +
-                </span>
-              </button>
+                  <span
+                    style={{
+                      fontWeight: 600,
+                      fontSize: 16,
+                      color: isOpen ? "#FF6B35" : "#1A1A2E",
+                      lineHeight: 1.4,
+                    }}
+                  >
+                    {faq.q}
+                  </span>
+                  <span
+                    style={{
+                      color: "#FF6B35",
+                      fontSize: 24,
+                      flexShrink: 0,
+                      display: "inline-flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      width: 28,
+                      height: 28,
+                      borderRadius: "50%",
+                      background: isOpen ? "rgba(255,107,53,0.12)" : "rgba(255,107,53,0.07)",
+                      transform: isOpen ? "rotate(45deg)" : "rotate(0deg)",
+                      transition: "transform 0.25s ease, background 0.2s ease",
+                      lineHeight: 1,
+                    }}
+                  >
+                    +
+                  </span>
+                </button>
 
-              {openIndex === i && (
-                <div className="px-6 pb-5 text-gray-500 leading-relaxed text-[15px]">
-                  {faq.a}
-                </div>
-              )}
-            </div>
-          ))}
+                {isOpen && (
+                  <div
+                    style={{
+                      padding: "0 24px 20px",
+                      color: "#6B7280",
+                      fontSize: 15,
+                      lineHeight: 1.7,
+                    }}
+                  >
+                    {faq.a}
+                  </div>
+                )}
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
