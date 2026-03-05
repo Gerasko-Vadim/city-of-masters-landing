@@ -43,7 +43,7 @@ export default function Hero() {
           {/* H1 */}
           <h1 className="text-white font-extrabold leading-tight mb-6" style={{ fontSize: "clamp(36px, 6vw, 64px)" }}>
             Мастер за{" "}
-            <span style={{ color: "#FF6B35" }}>20 минут</span>
+            <span style={{ color: "#FF6B35" }}>5 минут</span>
             <br />— прямо в Telegram
           </h1>
 
@@ -79,7 +79,7 @@ export default function Hero() {
           <div className="flex flex-wrap items-center gap-6 mt-12">
             {[
               { icon: "✅", text: "Проверенные мастера" },
-              { icon: "⚡", text: "Приедем за 20 минут" },
+              { icon: "⚡", text: "Приедем за 5 минут" },
               { icon: "💳", text: "Прозрачные цены" },
             ].map((item) => (
               <div key={item.text} className="flex items-center gap-2 text-white/70">

@@ -61,7 +61,7 @@ export default function QRSection() {
               style={{ fontSize: "clamp(28px, 4vw, 44px)", lineHeight: 1.2 }}
             >
               Отсканируйте QR-код<br />
-              <span style={{ color: "#FF6B35" }}>и мастер будет через 20 минут</span>
+              <span style={{ color: "#FF6B35" }}>и мастер будет через 5 минут</span>
             </h2>
             <p className="text-white/60 text-lg leading-relaxed mb-8 max-w-lg">
               Отсканируйте код камерой смартфона — откроется чат с нашим ботом в Telegram.
@@ -86,7 +86,7 @@ export default function QRSection() {
             {/* Features */}
             <div className="grid grid-cols-2 gap-4 mt-10 max-w-md mx-auto lg:mx-0">
               {[
-                { icon: "⚡", text: "Мастер за 20 минут" },
+                { icon: "⚡", text: "Мастер за 5 минут" },
                 { icon: "🔒", text: "Проверенные специалисты" },
                 { icon: "💬", text: "Чат с мастером" },
                 { icon: "📍", text: "Трекинг на карте" },

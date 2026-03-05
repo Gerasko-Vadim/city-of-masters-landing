@@ -102,7 +102,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-white/50 text-sm leading-relaxed max-w-xs mb-6">
-              Сервис вызова проверенных мастеров в Бишкеке. Электрики, сантехники и другие специалисты — за 20 минут.
+              Сервис вызова проверенных мастеров в Бишкеке. Электрики, сантехники и другие специалисты — за 5 минут.
             </p>
             {/* Social icons */}
             <div className="flex gap-3">
