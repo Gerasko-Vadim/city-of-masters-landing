@@ -1,5 +1,5 @@
 const CLIENT_BOT = "https://t.me/city_of_masters_client_bot";
-const MASTER_BOT = "https://t.me/gorodmasterov312";
+const MASTER_BOT = "https://t.me/city_masters_bot";
 
 export default function Hero() {
   return (

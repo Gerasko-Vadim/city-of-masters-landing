@@ -1,11 +1,11 @@
-const MASTER_BOT = "https://t.me/gorodmasterov312";
+const MASTER_BOT = "https://t.me/city_masters_bot";
 
 const steps = [
   {
     number: "1",
     icon: "📲",
-    title: "Напишите нашему администратору",
-    desc: "Найдите @gorodmasterov312 в Telegram и напишите нам. Регистрация займёт 2 минуты.",
+    title: "Откройте бота для мастеров",
+    desc: "Найдите @city_masters_bot в Telegram и нажмите Старт. Регистрация займёт 2 минуты.",
   },
   {
     number: "2",

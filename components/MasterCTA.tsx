@@ -1,4 +1,4 @@
-const MASTER_BOT = "https://t.me/gorodmasterov312";
+const MASTER_BOT = "https://t.me/city_masters_bot";
 
 const perks = [
   { icon: "🕐", text: "Свободный график — работайте когда хотите" },
